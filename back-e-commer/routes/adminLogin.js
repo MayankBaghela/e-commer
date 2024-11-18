@@ -11,7 +11,7 @@ const router = express.Router();
 const KEY = process.env.KEY;
 const {sendEmail} = require('../CommonSnips/EmailSender')
 
-//-->   http://localhost:2727/adminloginapi/create-admin
+//-->   https://e-commer-backend.onrender.com/adminloginapi/create-admin
 router.post("/create-admin", async (req, res) => {
   try {
     const { admin_name, admin_email, admin_pass } = req.body;
@@ -53,7 +53,7 @@ router.post("/create-admin", async (req, res) => {
 });
 
 
-//-->   http://localhost:2727/adminloginapi/login-admin
+//-->   https://e-commer-backend.onrender.com/adminloginapi/login-admin
 router.post("/login-admin", async (req, res) => {
   const admin_email = req.body.admin_email;
   const admin_pass = req.body.admin_pass;
@@ -88,7 +88,7 @@ router.post("/login-admin", async (req, res) => {
   // const token = jwt.sign((userId,))
 });
 
-//-->   http://localhost:2727/adminloginapi/checktokken
+//-->   https://e-commer-backend.onrender.com/adminloginapi/checktokken
 router.post("/checktokken", async (req, res) => {
   const token = req.body.token;
   try {
@@ -103,7 +103,7 @@ router.post("/checktokken", async (req, res) => {
   }
 });
 
-//-->   http://localhost:2727/adminloginapi/updatepass
+//-->   https://e-commer-backend.onrender.com/adminloginapi/updatepass
 router.post("/updatepass", async (req, res) => {
   const admin_email = req.body.admin_email;
   const admin_pass = req.body.admin_pass;
@@ -128,7 +128,7 @@ router.post("/updatepass", async (req, res) => {
   }
 });
 
-//-->   http://localhost:2727/adminloginapi/adminlogout
+//-->   https://e-commer-backend.onrender.com/adminloginapi/adminlogout
 router.post('/adminlogout',async(req,res)=>{
   const token = req.body.token
   try {
@@ -144,7 +144,7 @@ router.post('/adminlogout',async(req,res)=>{
 
 })
 
-//-->   http://localhost:2727/adminloginapi/sendresetlink
+//-->   https://e-commer-backend.onrender.com/adminloginapi/sendresetlink
 router.post('/sendresetlink', async (req, res) => {
   const { admin_email } = req.body;
 
@@ -190,7 +190,7 @@ router.post('/sendresetlink', async (req, res) => {
 });
 
 
-//--> http://localhost:2727/adminloginapi/resetpass
+//--> https://e-commer-backend.onrender.com/adminloginapi/resetpass
 router.post('/resetpass', async (req, res) => {
   const { reset_token, admin_pass } = req.body;
 

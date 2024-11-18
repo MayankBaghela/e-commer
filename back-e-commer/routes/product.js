@@ -125,7 +125,7 @@ router.get('/adminproductview', async (req, res) => {
 });
 
 
-//http://localhost:2727/adminproduct/changestatus
+//https://e-commer-backend.onrender.com/adminproduct/changestatus
 router.post('/changestatus',async(req,res)=>{
 const {productIds,newStatus} = req.body
     try {
@@ -140,7 +140,7 @@ const {productIds,newStatus} = req.body
 })
 
 
-//http://localhost:2727/adminproduct/deletemproduct
+//https://e-commer-backend.onrender.com/adminproduct/deletemproduct
 
 router.post('/deletemproduct',async(req,res)=>{
     const {productIds} = req.body
@@ -156,7 +156,7 @@ router.post('/deletemproduct',async(req,res)=>{
         }
     })
 
-    //http://localhost:2727/adminproduct/deletesingleproduct/:id
+    //https://e-commer-backend.onrender.com/adminproduct/deletesingleproduct/:id
 
 router.delete('/deletesingleproduct/:id',async(req,res)=>{
     const productId = req.params.id
@@ -177,7 +177,7 @@ router.delete('/deletesingleproduct/:id',async(req,res)=>{
 
     })
 
-//http://localhost:2727/adminproduct/uploadimages/:id
+//https://e-commer-backend.onrender.com/adminproduct/uploadimages/:id
 
     const UploadImages = multer({storage:proStore})
     router.post('/uploadimages/:id',UploadImages.array('images'),async(req,res)=>{
