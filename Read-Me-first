@@ -1,0 +1,92 @@
+Read --> .env In Backend 
+PORT - 2727
+Mongoose - mongodb://localhost:27017/E-commers
+
+
+step 1 - Go to admin login
+ 
+step 2 - click registration - Admin Registration
+
+
+step - 3
+        Enter - Admin Name , Admin Email , Password
+
+        Once registered, you will be redirected to the Admin login page.
+
+Important Note - "The forgot password code will not run unless you go to your .env file and add the original email and email password".
+
+step - 4
+        Enter - Valid Email and Password 
+
+        After logging in it will send you to the admin panel.
+        but Products Are Not Available from Your side
+
+
+step - 5   
+        Firstly Add Category For Products 
+
+        1, Add Category Name 
+            Like :- Mobile , Clothes , Laptops ,etc.
+
+        2, Add Category Image 
+            Image For Category   
+
+        Add 4 to 5 Category
+
+step - 6
+        Go To Add Product page
+        The category add itself will be listed here.
+
+        1, Select Product Category
+        2, Enter Product Name
+        3, Chose Product Thumbnail
+        4, Product Short Description
+        5, Product Long Description
+        6, Enter Product Price 
+        7, Enter Product Sale Price
+        8, Select Sale Start Date
+        9, Sale End Date
+
+         Here you can manage Category Add And Delete 
+
+        " When you delete the category here, the image will also be deleted from the server. "
+
+
+    When you successfully add the data, you will get a notification.
+
+
+step - 7
+   
+    Go to All Products Page
+    Add More Then 4 Products
+    
+    1, Here you can manage products
+    2, Delete Single Products
+    3, Delete Multiple Products
+    4, Search Product 
+    5, Products Status changes
+    6, Search Products According to Status
+
+" When you delete the Single Products here, the image will also be deleted from the server. "
+
+
+step - 8
+    Go to Settings
+
+    Change Password - If you remember your old password then you can change your password here.
+    Logout - When you click on logout, you will be redirected to admin login and have to login again.
+
+Important Note -     Your login is valid only for 1 hour, after which you will be redirected to the admin login.
+
+
+
+The code here is an example of an e-commerce website, 
+if we want to turn it into a real e-commerce website we need to add more code.
+
+
+Thank You 
+Mayank Baghela
+ph.   -8770150020
+email -Baghela.mayank@gmail.com
+
+
